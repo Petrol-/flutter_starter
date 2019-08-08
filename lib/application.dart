@@ -8,8 +8,8 @@ class Application extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        StatefulProvider<ApplicationStore>(
-          valueBuilder: (_) => ApplicationStore(),
+        Provider<ApplicationStore>(
+          builder :(_) => ApplicationStore(),
         ),
 
       ],

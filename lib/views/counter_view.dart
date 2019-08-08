@@ -6,12 +6,11 @@ import 'package:provider/provider.dart';
 class CounterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return StatefulProvider<CounterStore>(
-      valueBuilder: (_)=>CounterStore(),
+    return Provider<CounterStore>(
+      builder: (_)=>CounterStore(),
       child: Builder(
         builder: (context) {
           final counterStore = Provider.of<CounterStore>(context);
-
           return Scaffold(
               body: Container(
                 child: Center(

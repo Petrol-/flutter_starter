@@ -4,7 +4,8 @@ part 'counter_store.g.dart';
 
 class CounterStore = _CounterStore with _$CounterStore;
 
-abstract class _CounterStore implements Store {
+
+abstract class _CounterStore with Store {
   _CounterStore(){
     print("init");
   }
